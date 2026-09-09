@@ -1,0 +1,14 @@
+﻿using static SplashKitSDK.SplashKit;
+string name;
+int age;
+double height;
+WriteLine("Enter your name ");
+name= ReadLine();
+WriteLine("Enter your age");
+age=Convert.ToInt32(ReadLine());
+WriteLine("Enter your height");
+height=Convert.ToDouble(ReadLine());
+WriteLine("Stunent Information");
+WriteLine("name: " +name);
+WriteLine("age: " +age);
+WriteLine("height:" +height+ " meters");
