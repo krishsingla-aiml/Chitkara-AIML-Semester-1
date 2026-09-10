@@ -1,0 +1,14 @@
+﻿using System.Drawing;
+using static SplashKitSDK.SplashKit;
+OpenWindow("Krish window",800,800);
+ClearScreen(ColorBlack());
+DrawEllipse(ColorRed(),0,400,800,800);
+FillEllipse(ColorDarkBlue(),0,400,800,800);
+DrawRectangle(ColorDarkGreen(),280,400,250,150);
+FillRectangle(ColorYellow(),280,400,250,150);
+DrawRectangle(ColorRed(),370,550,60,200);
+FillRectangle(ColorBrown(),370,550,60,200);
+DrawTriangle(ColorOrange(),280,400,530,400,405,200);
+FillTriangle(ColorDarkGreen(),280,400,530,400,405,200);
+RefreshScreen();
+while(!QuitRequested());
