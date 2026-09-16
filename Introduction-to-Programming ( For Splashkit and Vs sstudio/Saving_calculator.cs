@@ -1,0 +1,34 @@
+﻿using System.CodeDom.Compiler;
+using static SplashKitSDK.SplashKit;
+string name;
+WriteLine("Enter your name:");
+name=ReadLine();
+string title;
+WriteLine("What are you saving for?Enter title: ");
+title= ReadLine();
+double dollars1;
+WriteLine("How much do you need to save?Enter dolars1: ");
+dollars1=Convert.ToDouble(ReadLine());
+double week;
+WriteLine("How long before the purchase?Enter weeks: ");
+week=Convert.ToDouble(ReadLine());
+WriteLine("How much have you already?Enter Dollars:");
+double dollars2;
+dollars2=Convert.ToDouble(ReadLine());
+WriteLine("How much can you save each weeks?Enter dollars: ");
+double dollars3;
+dollars3=Convert.ToDouble(ReadLine());
+double tosave;
+tosave=dollars1/week;
+double howmuchweeksneeded;
+howmuchweeksneeded=dollars1/dollars3;
+
+WriteLine("Hi " +name);
+WriteLine("You need to save dollars for " +title);
+WriteLine("You have to save " +dollars1);
+WriteLine("You have " +week+ " week.");
+WriteLine("You have " +dollars2+ " already.");
+WriteLine("You can save " +dollars3+ " each week.");
+WriteLine("For the " +title+ " you need to save " +tosave+ " dollars a week Based on your current savings you need " +howmuchweeksneeded+ " weeks to save $" +dollars1);
+
+WriteLine("Thanks....  " +name+ " For using me ");
